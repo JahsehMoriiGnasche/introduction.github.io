@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩彬 | AI 训练师 & 投标专员</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%);
+        }
+
+        .apple-card {
+            background: #ffffff;
+            border-radius: 20px;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+        }
+
+        .apple-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .btn-primary {
+            background-color: #0071e3;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 980px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0077ed;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-tag {
+            background: rgba(0, 113, 227, 0.1);
+            color: #0071e3;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="glass-nav fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 h-12 flex items-center justify-between">
+            <div class="font-semibold text-lg tracking-tight">韩彬</div>
+            <div class="hidden md:flex space-x-8 text-sm text-gray-600">
+                <a href="#about" class="hover:text-black transition">个人简介</a>
+                <a href="#experience" class="hover:text-black transition">工作经历</a>
+                <a href="#projects" class="hover:text-black transition">项目作品</a>
+                <a href="#skills" class="hover:text-black transition">专业技能</a>
+                <a href="#contact" class="hover:text-black transition">联系方式</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero-gradient min-h-screen flex flex-col items-center justify-center px-6 pt-20">
+        <div class="text-center max-w-4xl">
+            <h2 class="text-blue-600 font-semibold mb-4 tracking-wider reveal">软件工程背景 × AI 创意赋能</h2>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight reveal" style="transition-delay: 0.2s">
+                我是韩彬。<br>
+                一名专业的 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">AI 训练师</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 mb-10 reveal" style="transition-delay: 0.4s">
+                在武汉辉耀映画，我负责将 AI 技术深度融入广告全流程。<br>
+                从前期投标方案到后期视觉呈现，助力业务全链条提质增效。
+            </p>
+            <div class="flex space-x-4 justify-center reveal" style="transition-delay: 0.6s">
+                <a href="#contact" class="btn-primary">即刻联系</a>
+                <a href="#projects" class="flex items-center text-blue-600 font-medium hover:underline">
+                    查看作品集 <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="py-24 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">职业历程</h2>
+            <div class="grid md:grid-cols-12 gap-8 mb-16 reveal">
+                <div class="md:col-span-4 text-gray-500 text-lg">
+                    2024.04 - 至今
+                </div>
+                <div class="md:col-span-8">
+                    <h3 class="text-2xl font-bold mb-2">武汉辉耀映画广告发展有限公司</h3>
+                    <p class="text-blue-600 font-medium mb-4">AI 训练师 / 投标专员</p>
+                    <ul class="space-y-4 text-gray-600 leading-relaxed">
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> <b>全链路支撑</b>：对接设计、影视、策划部门，推动 AI 技术在广告制作全流程的融合。</li>
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> <b>效率优化</b>：通过 AI 工作流将制作周期缩短 25%，支撑项目 40+，客户认可率达 95%+。</li>
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> <b>内训与创新</b>：搭建 AI 应用体系，开展多场技术内训及外训，解决 AI 落地中的技术难点。</li>
+                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> <b>投标全流程</b>：参与 50 + 投标项目，累计中标超 3000W，报名到投标全经验零违规零失误。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-12 gap-8 reveal">
+                <div class="md:col-span-4 text-gray-500 text-lg">
+                    2019.09 - 2023.06
+                </div>
+                <div class="md:col-span-8">
+                    <h3 class="text-2xl font-bold mb-2">武汉纺织大学</h3>
+                    <p class="text-gray-600 font-medium mb-4">软件工程 | 本科</p>
+                    <p class="text-gray-500">具备扎实的底层编程逻辑，主修 C++、Java、Python 及 OpenGL 图形编程，能够从技术底层理解并优化 AI 生成逻辑。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目集 (Portfolio) -->
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4">AI 实战案例</h2>
+                    <p class="text-gray-500">覆盖投标策划、视觉生成与风格化全领域</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 投标板块 -->
+                <div class="apple-card overflow-hidden reveal">
+                    <div class="aspect-video bg-blue-50 flex items-center justify-center p-0.1 group relative overflow-hidden">
+                        <img src="https://s3.bmp.ovh/2026/02/04/brg6GBLi.png" alt="中标金额" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
+                            <p class="text-white text-sm">通过 AI 快速生成技术方案和高度写实场景，赢得客户青睐</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="project-tag">投标支撑</span>
+                            <span class="project-tag">概念视觉</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">AI 辅助投标策划方案</h3>
+                        <p class="text-gray-500 text-sm">利用 AI 技术在投标阶段快速构建视觉 Demo，在多个项目竞标中发挥核心作用，提升项目获取能力。</p>
+                    </div>
+                </div>
+
+                <!-- 视频风格化板块 -->
+                <div class="apple-card overflow-hidden reveal" style="transition-delay: 0.2s">
+                    <div class="aspect-video bg-gray-200 relative group">
+                        <img src="https://s3.bmp.ovh/2026/02/04/kx8zgatn.png" alt="风格化" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <a href="https://v.qq.com/x/page/i3190wdusdd.html" target="_blank" class="text-white border border-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition duration-300 cursor-pointer flex items-center gap-2">
+                                <i class="fas fa-play text-xs"></i> 查看视频
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="project-tag">AI 视频</span>
+                            <span class="project-tag">获奖项目</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">湖北电网用电负荷破纪录背后的“硬核保障”</h3>
+                        <p class="text-gray-500 text-sm">将实拍场景进行 AI 风格化创作，项目最终在平台发布并获奖。展示了极高的技术落地性。</p>
+                    </div>
+                </div>
+
+                <!-- 综合视觉支撑 -->
+                <div class="apple-card overflow-hidden reveal" style="transition-delay: 0.4s">
+                    <div class="aspect-video bg-gray-200 relative group">
+                        <img src="https://s3.bmp.ovh/2026/02/04/LNJZ2J1g.png" alt="首尾帧" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <a href="https://v.qq.com/x/page/d3190hwnwzc.html" target="_blank" class="text-white border border-white px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition duration-300 cursor-pointer flex items-center gap-2">
+                                <i class="fas fa-play text-xs"></i> 查看视频
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="project-tag">AI 创意</span>
+                            <span class="project-tag">一镜到底</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">国家电网定点帮扶湖北“三县一区”AI全景巡礼</h3>
+                        <p class="text-gray-500 text-sm">利用 AI 视频首尾帧功能，一镜到底创意巡礼，展现独特效果。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能矩阵 -->
+    <section id="skills" class="py-24 px-6 bg-[#1d1d1f] text-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center">能力矩阵</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="reveal">
+                    <div class="text-4xl mb-6 text-blue-500"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-xl font-bold mb-4">商业投标赋能</h3>
+                    <p class="text-gray-400">擅长在竞标阶段提供 AI 视觉及技术方案，通过快速生成的概念图，优化标书质量，提高方案转化率。</p>
+                </div>
+                <div class="reveal" style="transition-delay: 0.2s">
+                    <div class="text-4xl mb-6 text-blue-500"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-bold mb-4">全栈 AI 技术栈</h3>
+                    <p class="text-gray-400">精通 Stable Diffusion, Midjourney, Gemini, Lovart等工具。具备定制化 Prompt 优化与模型调优能力。</p>
+                </div>
+                <div class="reveal" style="transition-delay: 0.4s">
+                    <div class="text-4xl mb-6 text-blue-500"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold mb-4">软件工程逻辑</h3>
+                    <p class="text-gray-400">软件工程本科出身，具备系统化思维，能通过技术手段解决 AI 流程中的自动化和定制化需求。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <h2 class="text-5xl font-bold mb-8 tracking-tight">期待与您合作。</h2>
+            <p class="text-xl text-gray-500 mb-12">我将用技术逻辑与艺术表现力，为贵司创造更多具有竞争力的 AI 视觉成果。</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <div class="p-6 bg-gray-50 rounded-2xl flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">电话</p>
+                        <p class="text-lg font-semibold">185 0710 5209</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">邮箱</p>
+                        <p class="text-lg font-semibold">2683502115@qq.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="window.print()" class="text-sm text-gray-400 hover:text-gray-600 transition underline underline-offset-4">
+                
+            </button>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-xs">
+            <p>© 2024 韩彬. AI 训练师.</p>
+            <div class="mt-4 md:mt-0 space-x-6">
+                <span>武汉纺织大学 · 软件工程</span>
+                <span>Designed by HanBin</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 滚动揭示动画
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 80;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        window.onload = reveal;
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
